@@ -23,5 +23,16 @@ namespace oop
         {
             Console.WriteLine("HOOOONK!");
         }
+
+        public string GetFullInfo()
+        {
+            return $"{Brand} {Model} {Year}";
+        }
+
+        public float CalculateFuelConsumption( int kilometers, float consumptionRate)
+        {
+            float consumptionPerKm = consumptionRate / 100;
+            return kilometers * consumptionPerKm;
+        }
     }
 }
